@@ -204,7 +204,7 @@ a {
 .header .banner .photo-wrap .name {
   width: 50%;
   color: var(--main-color);
-  font-size: var(--title-font-size);
+  font-size: var(--s-title-font-size);
   font-weight: 700;
   padding-left: 2rem;
 }
@@ -400,7 +400,8 @@ a {
     padding-top: 1rem;
     line-height: 3rem;
   }
-  .name {
+  .header .banner .photo-wrap .name {
+    font-size: var(--title-font-size);
     padding-bottom: 2rem;
   }
   .skill-background {

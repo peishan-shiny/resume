@@ -209,7 +209,7 @@ a {
       .name {
         width: 50%;
         color: var(--main-color);
-        font-size: var(--title-font-size);
+        font-size: var(--s-title-font-size);
         font-weight: 700;
         padding-left: 2rem;
 
@@ -442,8 +442,16 @@ a {
     line-height: 3rem;
   }
 
-  .name {
-    padding-bottom: 2rem;
+  // header
+  .header {
+    .banner {
+      .photo-wrap {
+        .name {
+          font-size: var(--title-font-size);
+          padding-bottom: 2rem;
+        }
+      }
+    }
   }
 
   // skill
