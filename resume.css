@@ -144,6 +144,9 @@ a {
   --focus-color: #ac2837;
   --light-color: #7dcedb;
   --white: #fff;
+  --s-title-font-size: 32px;
+  --s-english-font-size: 22px;
+  --s-sec-font-size: 20px;
   --title-font-size: 36px;
   --english-font-size: 26px;
   --sec-font-size: 24px;
@@ -237,22 +240,21 @@ a {
 }
 
 .chinese-title {
-  font-size: var(--title-font-size);
+  font-size: var(--s-title-font-size);
   letter-spacing: 0.25rem;
 }
 
 .english-title {
-  font-size: var(--english-font-size);
+  font-size: var(--s-english-font-size);
   letter-spacing: 0.25rem;
   padding-left: 1rem;
 }
 
 .content {
   color: var(--main-color);
-  font-size: var(--sec-font-size);
+  font-size: var(--s-sec-font-size);
   letter-spacing: 0.25rem;
   padding-top: 1rem;
-  padding-left: 0.5rem;
   line-height: 3rem;
 }
 
@@ -346,7 +348,7 @@ a {
 }
 .project .project-item .project-text {
   color: var(--main-color);
-  font-size: var(--english-font-size);
+  font-size: var(--s-sec-font-size);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -356,8 +358,8 @@ a {
   transition: opacity 0.3s ease-out;
 }
 .project .project-item .project-text .project-skill {
-  margin-top: 2rem;
-  line-height: 3rem;
+  margin-top: 1rem;
+  line-height: 2rem;
 }
 
 .footer {
@@ -383,6 +385,21 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .chinese-title {
+    font-size: var(--title-font-size);
+  }
+  .english-title {
+    font-size: var(--english-font-size);
+    letter-spacing: 0.25rem;
+    padding-left: 1rem;
+  }
+  .content {
+    color: var(--main-color);
+    font-size: var(--sec-font-size);
+    letter-spacing: 0.25rem;
+    padding-top: 1rem;
+    line-height: 3rem;
+  }
   .name {
     padding-bottom: 2rem;
   }
@@ -424,5 +441,12 @@ a {
   .project-wrap .project {
     all: unset;
     margin-bottom: 2rem;
+  }
+  .project-wrap .project .project-item .project-text {
+    font-size: var(--sec-font-size);
+  }
+  .project-wrap .project .project-item .project-text .project-skill {
+    margin-top: 2rem;
+    line-height: 3rem;
   }
 }/*# sourceMappingURL=resume.css.map */
