@@ -295,8 +295,8 @@ a {
 }
 .skill-background .content-inner .card .content .skill-block {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  /* justify-content: space-around; */
 }
 .skill-background .content-inner .final-card {
   margin-bottom: 3rem;
@@ -426,6 +426,11 @@ a {
   }
   .skill-background .content-inner .card:hover {
     transform: translate(0, -1rem);
+  }
+  .skill-background .content-inner .card .content .skill-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
   .skill-background .content-inner .card .skill-left {
     margin: 1rem;
